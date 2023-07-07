@@ -1,0 +1,186 @@
+  @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Roboto:ital,wght@1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: white;
+}
+.tout{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+}
+.parti1{
+    grid-column: 1/6;
+    grid-row: 1;
+    background-color: rgb(15, 14, 14);
+    height: 100vh;
+
+}
+.parti2{
+    grid-column: 6/12;
+    grid-row: 1;
+        
+}
+.parti2 img{
+    height: 100vh;
+    width: 100%;
+}
+header{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.logo h2{
+        font-size: 30px;
+        font-weight: 800;
+}
+.logo h2 span{
+    font-size: 25px;
+    font-weight: 90;
+}
+.lien{
+    display: flex;
+    gap: 30px;
+}
+.contenu{
+    margin-top: 80px;
+    margin-left: 30px;
+ 
+}
+.contenu span{
+ margin-top: 90px;
+ font-size: 30px;
+ font-family: 'Montserrat';
+
+}
+.contenu h1{
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+.contenu .zap{
+    color: orange;
+    font-family: 'Zapfino Forte LT Pro';
+    font-size: 50px;
+}
+
+.contenu p{
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    font-size: 10px;
+}
+.contenu input{
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 56%;
+}
+.contenu button{
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    right: 80px;
+
+}
+.pied{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.pied i{
+    color: orange;
+    font-size: 20px;
+}
+.calendrier{
+    display: flex;
+    gap: 20px;
+}
+.user{
+    display: flex;
+    gap: 20px;
+}
+.match{
+    display: flex;
+    gap: 20px;
+}
+
+
+@media screen and (max-width:1024px) {
+    .tout{
+        display: flex;
+       flex-direction: column;
+    }
+    header{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .lien{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    .logo{
+        text-align: center;
+    }
+
+    .contenu{
+        margin-top: 10px;
+        margin-left: 0px;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       flex-wrap: wrap;
+     
+    }
+
+    .contenu span{
+        margin-top: 10px;
+        font-size: 30px;
+        font-family: 'Montserrat';
+       
+       }
+       .contenu h1{
+           margin-top: 5px;
+           font-size: 50px;
+       }
+       
+       .contenu p{
+           margin-top: 5px;
+           font-family: 'Montserrat';
+           font-size: 15px;
+       }
+       .contenu input{
+           margin-top: 20px;
+           padding: 10px;
+           border-radius: 10px;
+           background-color: transparent;
+           border: 1px solid white;
+           width: 55%;
+       }
+       .contenu button{
+           padding: 10px;
+           border-radius: 15px;
+           position: relative;
+           right: 30px;
+       
+       }
+
+       .pied{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+}
